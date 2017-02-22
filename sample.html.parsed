@@ -1,0 +1,82 @@
+<p>&nbsp;</p>
+<div>[[*IP]]</div>
+<div>[[*Identificador]]</div>
+<div>[[*NombreCuestionario]]</div>
+<div>[[*Fecha]]</div>
+<p>&nbsp;</p>
+<table  border="1px">
+	<tr>
+		<td class="enunciado" width="30%">[[ enunciado:id_evento ]]</td>
+		<td>[[ id_evento ]]</td>
+	</tr>
+	<tr>
+		<td class="enunciado" width="30%">[[ enunciado:solicitante ]]</td>
+		<td>[[ solicitante ]]</td>
+	</tr>
+	<tr>
+		<td class="enunciado" width="30%">[[ enunciado:email ]]</td>
+		<td>[[ email ]]</td>
+	</tr>
+	<tr>
+		<td colspan="2">[[ enunciado:descritor ]]</td>
+	</tr>
+	<tr>
+		<td class="enunciado" width="30%">[[ enunciado:avisos ]]</td>
+		<td>[[ avisos ]]</td>
+	</tr>
+	<tr>
+		<td colspan="2">[[ enunciado:titol-tag ]]</td>
+	</tr>
+	<tr>
+		<td class="enunciado" width="30%">[[ enunciado:titulo_actividad_es ]]</td>
+		<td>[[ titulo_actividad_es ]]</td>
+	</tr>
+	<tr>
+		<td class="enunciado" width="30%">[[ enunciado:titula_act_va ]]</td>
+		<td>[[ titula_act_va ]]</td>
+	</tr>
+	<tr>
+		<td class="enunciado" width="30%">[[ enunciado:titulo_actividad_en ]]</td>
+		<td>[[ titulo_actividad_en ]]</td>
+	</tr>
+	<tr>
+		<td colspan="2">[[ enunciado:input18 ]]</td>
+	</tr>
+	<tr>
+		<td class="enunciado" width="30%">[[ enunciado:fecha_hora ]]</td>
+		<td>[[ fecha_hora ]]</td>
+	</tr>
+	<tr>
+		<td class="enunciado" width="30%">[[ enunciado:ubicacion ]]</td>
+		<td>[[ ubicacion ]]</td>
+	</tr>
+	<tr>
+		<td colspan="2">[[ enunciado:input16 ]]</td>
+	</tr>
+	<tr>
+		<td class="enunciado" width="30%">[[ enunciado:url_es ]]</td>
+		<td>[[ url_es ]]</td>
+	</tr>
+	<tr>
+		<td class="enunciado" width="30%">[[ enunciado:url_va ]]</td>
+		<td>[[ url_va ]]</td>
+	</tr>
+	<tr>
+		<td class="enunciado" width="30%">[[ enunciado:url_en ]]</td>
+		<td>[[ url_en ]]</td>
+	</tr>
+	<tr>
+		<td class="enunciado" width="30%">[[ enunciado:url_imagen ]]</td>
+		<td>[[ url_imagen ]]</td>
+	</tr>
+	<tr>
+		<td class="enunciado" width="30%">[[ enunciado:imagen_descarga ]]</td>
+		<td>[[ imagen_descarga ]]</td>
+	</tr>
+	<tr>
+		<td class="enunciado" width="30%">[[ enunciado:otros_cambios ]]</td>
+		<td>[[ otros_cambios ]]</td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+
