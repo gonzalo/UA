@@ -14,9 +14,41 @@ var substitution_rules = [{
         substitution: '&nbsp;'
     },
     {
+        //convertimos la cabecera en un tabla con los datos de la petición fase 1
+        pattern: '<div>\\[\\[\\*IP\\]\\]<\\/div>',
+        substitution: '<table border="1px">\n\t<tr><th><strong>Dades formulari / datos formulario</strong></th></tr>\n<div>[[*IP]]</div>'
+
+    },
+    {
+        //convertimos la cabecera en un tabla con los datos de la petición fase 2
+        pattern: '<div>\\[\\[\\*Fecha\\]\\]<\\/div>',
+        substitution: '<div>[[*Fecha]]</div>\n</table>'
+
+    },
+    {
+        //añadimos las líneas correspondientes para IP
+        pattern: '<div>\\[\\[\\*IP\\]\\]<\\/div>',
+        substitution: '\t<tr><td>IP origen<\/td><td>[[*IP]]<\/td><\/tr>'
+    },
+    {
+        //añadimos las líneas correspondientes para id cuestionario
+        pattern: '<div>\\[\\[\\*Identificador\\]\\]<\\/div>',
+        substitution: '\t<tr><td>ID registro<\/td><td>[[*Identificador]]<\/td><\/tr>'
+    },
+    {
+        //añadimos las líneas correspondientes para nombre cuestionario
+        pattern: '<div>\\[\\[\\*NombreCuestionario\\]\\]<\\/div>',
+        substitution: '\t<tr><td>Cuestionario<\/td><td>[[*NombreCuestionario]]<\/td><\/tr>'
+    },
+    {
+        //añadimos las líneas correspondientes para fecha
+        pattern: '<div>\\[\\[\\*Fecha\\]\\]<\\/div>',
+        substitution: '\t<tr><td>Fecha operación<\/td><td>[[*Fecha]]<\/td><\/tr>'
+    },
+    {
         //insertar cabecera de tabla
-        pattern: '<p>&nbsp;<\/p>\n<div>(.*)<\/div>\n<p>&nbsp;<\/p>',
-        substitution: '<div>$1<\/div>\n<p>&nbsp;<\/p>\n<table  border="1px">'
+        pattern: '</table>\n<p>&nbsp;</p>',
+        substitution: '</table>\n<table  border="1px">'
     },
     {
         //insertar pie de tabla
@@ -42,6 +74,10 @@ var substitution_rules = [{
         //campos tipo observaciones
         pattern: '<div class="respuestadada">(.*)<\/div>\n<div class="comentario">(.*)<\/div>\n<hr class="sep" \/>\n',
         substitution: '\t<tr>\n\t\t<td class="enunciado" width="30%">$1<\/td>\n\t\t<td>$2<\/td>\n\t<\/tr>\n'
+    },
+    {
+        pattern: '<p>&nbsp;<\/p>',
+        substitution: ''
     },
 ];
 
